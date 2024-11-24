@@ -4,8 +4,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Bmw implements Car {
+
+    public Bmw() {
+        System.out.println("Constructor: " + getClass().getName());
+    }
+
+
     @Override
     public String Drive() {
-        return "Driving Bmw  100 km/h";
+        return "Driving BMW 100 km/h";
     }
 }
