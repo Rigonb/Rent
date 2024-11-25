@@ -29,6 +29,6 @@ public class GenerControler {
 
     @GetMapping("/test")
     public String test() {
-        return "Test 1 ksdjksd";
+        return "Test 1 from us";
     }
 }

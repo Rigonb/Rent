@@ -1,4 +1,4 @@
-package entity;
+package com.pitagoras.springboot.demo.rent.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -8,6 +8,19 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "car")
 public class Car {
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", year=" + year +
+                ", color='" + color + '\'' +
+                ", licensePlate='" + licensePlate + '\'' +
+                ", available=" + available +
+                '}';
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
