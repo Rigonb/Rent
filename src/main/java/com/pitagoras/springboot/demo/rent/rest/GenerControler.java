@@ -22,6 +22,7 @@ public class GenerControler {
         return "This is an app we are creating for learning purposes.!";
     }
 
+
     @GetMapping("/devtools")
     public String testing() {
         return "This should work";
